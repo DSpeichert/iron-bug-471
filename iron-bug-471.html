@@ -1,0 +1,24 @@
+<head>
+  <title>iron-bug-471</title>
+</head>
+
+<body>
+  {{> yield}}
+</body>
+
+<template name="hello">
+<h1>Hello!</h1>
+<br />
+<a href="/billing/invoices/123/456.pdf">Click this first</a><br />
+<a href="{{pathFor 'otherpage'}}">Then this</a>
+</template>
+
+<template name="otherpage">
+Otherpage<br />
+<a href="/billing/invoices/123/456.pdf">Click this first</a><br />
+<a href="{{pathFor 'otherpage'}}">Then this</a>
+</template>
+
+<template name="loading">
+loading
+</template>
